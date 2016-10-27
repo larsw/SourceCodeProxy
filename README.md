@@ -46,7 +46,7 @@ Developed and maintained by Lars Wilhelmsen <<lars@spam.nospam.spam.spam.sral.or
 
 ## Credits
 
-Style sheet used on the Welcome page is https://milligram.github.io/
+Style sheet used on the Welcome page is [https://milligram.github.io/](https://milligram.github.io/)
 
 ### License
 
