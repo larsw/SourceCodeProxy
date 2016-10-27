@@ -28,17 +28,36 @@ It retrieves the source file from Stash and passes it verbatim through to the cl
 
 ## Installation
 
+### Web
+
 Install the web application under IIS and change the following settings in IIS:
 
 * `sourceCodeProxy:stashUser` The user to authenticate as against Stash.
 * `sourceCodeProxy:stashPassword` The password to authenticate with against Stash.
 * `sourceCodeProxy:stashBaseUrl` The base URL of the Stash service.
-
-### Security
+* 
+#### Security
 
 Depdending on your need for confidentiality, the IIS, or an OWIN middleware should be used to secure the service.
 E.g. enable Windows authentication (NTLM/Kerberos) in IIS and disable Anonymous authentication. It is also possible
 to authorize certain users or groups with the .NET Authorization mechanisms available.
+
+### Tray application
+
+Build it yourself, or download the `SourceCodeProxy.Tray-*-dist.zip` and unpack to a suitable location. Start SourceCodeProxy.Tray and configure it by opening the configuration dialog by double-clicking the tray icon (or right click + _Open..._)
+Note that you have to leave the text boxes in order to persist the changes to the configuration file.
+
+Press the _Start_ button to fire up the proxy service. It can be stopped again with the same button (now labeled _Stop_).
+
+#### _hosts_ file tricks
+
+Edit the `c:\windows\system32\drivers\etc\hosts` file (as Administrator) and add the following entry:
+
+```
+127.0.0.1   source.code.proxy
+```
+
+Now you can configure the Proxy Address to `http://source.code.proxy`.
 
 ## About
 

@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SourceCodeProxy.Tray.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="stashBaseUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://stash.local/stash</Value>
+    </Setting>
+    <Setting Name="stashUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="stashPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="proxyAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://source.code.proxy</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
